@@ -10,7 +10,7 @@ AR=(<Insert Folder Names Here>)
 
 for i in "${AR[@]}"
 do
-	cd Sample${i}
+	cd 	${i}
 	gunzip *
 	cat *R1_001.fastq > Sample_${i}_R1.fastq
 	cat *R2_001.fastq > Sample_${i}_R2.fastq
